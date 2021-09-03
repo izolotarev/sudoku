@@ -4,8 +4,6 @@ module.exports = function solveSudoku(matrix) {
   const size = 9;
   const boxSize = 3;
 
-  console.log(matrix);
-
   const findEmpty = (matrix) => {
     for (let r = 0; r < size; r++) {
       for (let c = 0; c < size; c++) {
@@ -76,6 +74,5 @@ module.exports = function solveSudoku(matrix) {
   };
 
   solve();
-  console.log(matrix);
   return matrix;
 };
